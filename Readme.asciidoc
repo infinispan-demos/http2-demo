@@ -1,0 +1,13 @@
+= Infinispan HTTP/2 demo
+
+In Infinispan 9.0.2 we introduced HTTP/2 support for REST (you may look into https://youtu.be/wR3o6HA47Ao[unRESTful Web Services with HTTP2 by Fabian Stäber] video for more information). This demo shows how to use with JDK9 HTTP client (which supports HTTP/2 out of the box).
+
+= How to run it?
+
+1. Run Infinispan Server in a Docker container
+
+```
+docker run -e "APP_USER=test" -e "APP_PASS=test" jboss/infinispan-server:9.1.5.Final ../../docs/examples/configs/standalone-rest-ssl.xml --debug
+```
+
+2. Run this demo against it.

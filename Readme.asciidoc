@@ -4,10 +4,10 @@ In Infinispan 9.0.2 we introduced HTTP/2 support for REST (you may look into htt
 
 = How to run it?
 
-1. Run Infinispan Server in a Docker container
+* Run Infinispan Server in a Docker container
 
 ```
 docker run -e "APP_USER=test" -e "APP_PASS=test" jboss/infinispan-server:9.1.5.Final ../../docs/examples/configs/standalone-rest-ssl.xml --debug
 ```
 
-2. Run this demo against it.
+* Run this demo against it.
